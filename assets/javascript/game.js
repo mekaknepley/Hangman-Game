@@ -1,7 +1,7 @@
 //variables
 
 var wordList = ["Insane Clown Posse", "In you Face",
- "Piggy Pie", "Night of the Chainsaw", "Hokus Poskus",
+ "Piggy Pie", "Night of the Chainsaw", "Hokus Pokus",
   "Halls of Illusion","Juggalo Island",
    "Chicken Huntin", "Fonz Pond"];
 var winAmount = 0;
@@ -32,28 +32,25 @@ function printGame() {
 function printWins() {
 	//document.getElementById("wins").innerHTML = "Wins: " + winAmount;
 	$("#wins").html("Wins: " + winAmount);
-
-
 }
 
 function printLosses() {
 //document.getElementById("losses").innerHTML = "Losses: " + loseAmount;
 	$("#losses").html("Losses: " + loseAmount);
-
 }
 
 function printGuessRemaining() {
 //document.getElementById("lguessRemaining").innerHTML = "guessRemaining: " + guessRemaining;
-	$("#guessRemaining").html("guessRemaining: " + guessRemaining);
+	$("#guessRemaining").html("Guesses Remaining: " + guessRemaining);
 
 }
 
 function printGameStatus() {
 	if (won) {
-		$("#gameStatus").html("you won!!!");
+		$("#gameStatus").html("You won!!! Press any key to start a new game!!!");
 	}
 	else if (lose) {
-		$("#gameStatus").html("you lose press any key to start a new game!!!");
+		$("#gameStatus").html("You lose!!! Press any key to start a new game!!!");
 	}
 	else {
 		$("#gameStatus").html("Choose a letter!!!");
@@ -72,6 +69,8 @@ function printGameboard() {
 		else {
 			wordName += "_";
 		}
+
+		wordName += " ";
 	}
 	$("#gameBoard").html(wordName);
 }
@@ -93,12 +92,14 @@ function checkIfWonGame() {
 	}
 	winAmount++;
 	won=true;
+	$("#gameBoard").css("color", "red");
 }
 
 function checkIfLostGame() {
 	if (guessRemaining ==0) {
 		lose = true;
 		loseAmount++;
+		$("#gameBoard").css("color", "blue");
 	}
 }
 
@@ -108,6 +109,7 @@ function resetGame() {
 	pickAWord();
 	won = false;
 	lose = false;
+	$("#gameBoard").css("color", "white");
 }
 
 //Events

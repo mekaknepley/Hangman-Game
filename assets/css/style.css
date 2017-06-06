@@ -1,0 +1,47 @@
+body {
+	background-image: url("../images/clownBg.png");
+	font-family: 'Creepster', cursive;
+
+}
+
+#gameName {
+	color:white;
+	text-align: center;
+	font-size: 80px;
+	font-family: 'Creepster', cursive;
+	margin-bottom: 30px;
+}
+
+#gameBoard {
+	text-align: center;
+	color: white;
+	font-size: 60px;
+	margin-bottom: 20px;
+
+}
+
+#wins {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	font-family: 'Creepster', cursive;
+}
+#losses {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+#guessRemaining {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+#gameStatus {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+audio {
+	text-align: center;
+	margin: 10px auto;
+}

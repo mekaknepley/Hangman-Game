@@ -7,21 +7,39 @@
 	<!-- Added link to the jQuery Library -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-	<!--reset and style-->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
-
 	<!-- Added a link to Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-</head>
-<body>
-<div id="gameBoard">game goes here!!!</div>
-<div id="wins"> Wins goes here</div>
-<div id= "losses">Losses goes here</div>
-<div id= "guessRemaining">Guesses remaining goes here</div>
-<div id="gameStatus"> Game status goes here</div>
+	<!--style-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
 
+	<link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container container-fluid">
+<div class="row content">
+
+<div class="col-md-12" id="gameName">Hang The Insane Clown</div>
+<div class="col-md-12" id="gameStatus">Game status goes here</div>
+
+<br><br>
+<div class="col-md-12" id="gameBoard">game goes here!!!</div>
+
+<div class="col-md-12" id="wins"> Wins goes here</div>
+<div class="col-md-12" id="losses">Losses goes here</div>
+
+<div class="col-md-12" id="guessRemaining">Guesses remaining goes here</div>
+<div class="col-md-12">
+<audio controls="" autoplay>
+<source src="assets/clown.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+
+</div>
+</div>
  <!--Javascript-->
 <script src= "assets/javascript/game.js"></script>
 </body>
