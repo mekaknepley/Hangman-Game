@@ -31,6 +31,12 @@ body {
 	color: white;
 	font-size: 40px;
 }
+
+#lettersGuessed {
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
 #guessRemaining {
 	text-align: center;
 	color: white;

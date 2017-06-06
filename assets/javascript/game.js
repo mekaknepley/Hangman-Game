@@ -27,6 +27,7 @@ function printGame() {
 	printGuessRemaining();
 	printGameboard();
 	printGameStatus();
+	printLettersGuessed();
 }
 
 function printWins() {
@@ -75,6 +76,12 @@ function printGameboard() {
 	$("#gameBoard").html(wordName);
 }
 
+function printLettersGuessed() {
+	var lettersString = "Letters Guessed: "+ letterChosen.join(" ");
+
+
+	$("#lettersGuessed").html(lettersString);
+}
 function checkIfLetterInWord(key) {
 	if (wordPick.indexOf(key) == -1 && wordPick.indexOf(key.toUpperCase()) == -1) {
 		guessRemaining--;
